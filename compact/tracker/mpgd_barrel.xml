@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<lccdd>	
+<lccdd>
 <info name="mpgd_barrel.xml"
       title="Micro Pattern Gas Detectors"
-      author="mposik1983"
+      author="@mposik1983"
       url="https://github.com/mposik1983"
       status="development"
       version="1.0"
 ><comment/>
-</info>	
+</info>
 
   <define>
     <comment>
       Main parameters - Geo based on the original ECCE design, while for now
                         using the ATHENA MMGAS design for the layers (FIXME)
 
-      Note: the inner and outer layers are implemented as separate detectors, as they 
+      Note: the inner and outer layers are implemented as separate detectors, as they
       belong to different ACTS tracking volumes. If this restriction goes away
       in the future they could be put together in a single tag.
     </comment>
@@ -58,7 +58,7 @@
     <constant name="MMDriftCuElectrode_thickness"           value="5*um"/>
     <constant name="MMDriftKapton_thickness"                value="250*um"/>
     <constant name="MMDriftCuGround_thickness"              value="0.41*um"/>
-    
+
     <comment> FIXME: No support material is here, so fudge factor used to bring material budget to ~0.5% for barrel </comment>
     <constant name="MMFudgeInnerMPGDBarrel_thickness"                      value="570*um"/>
 
